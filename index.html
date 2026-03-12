@@ -197,6 +197,694 @@
       padding: 28px;
     }
 
+    .hero-image-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .hero-image-caption {
+      padding: 18px 20px 22px;
+    }
+
+    .hero-image-caption h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .hero-image-caption p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .card-label {
+      color: var(--success);
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .score-box {
+      margin: 18px 0 22px;
+      padding: 18px;
+      border-radius: 20px;
+      background: white;
+      border: 1px solid var(--line);
+    }
+
+    .score-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 14px 0;
+    }
+
+    .bar {
+      flex: 1;
+      height: 10px;
+      border-radius: 999px;
+      background: #eaf0f8;
+      overflow: hidden;
+      margin-left: 16px;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--primary), #74a0ff);
+    }
+
+    section {
+      padding: 36px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    .section-head p,
+    .section-copy {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+      max-width: 760px;
+    }
+
+    .grid-3,
+    .grid-2,
+    .grid-4 {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 14px 0 10px;
+      font-size: 1.18rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .image-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .image-card-content {
+      padding: 20px;
+    }
+
+    .image-card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .image-card-content p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 800;
+      border: 1px solid #d7e4ff;
+    }
+
+    .process-step {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .process-step::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--primary), #8cb0ff);
+    }
+
+    .process-number {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      background: var(--accent);
+      color: var(--primary);
+      border: 1px solid #d7e4ff;
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .quote p {
+      font-size: 1.08rem;
+      line-height: 1.9;
+      color: var(--text);
+      margin: 0 0 18px;
+    }
+
+    .quote small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #16347e, #1f4ed8 58%, #5b87ff);
+      color: white;
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 25px 60px rgba(31, 78, 216, 0.28);
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.86);
+      margin: 10px 0 0;
+      line-height: 1.8;
+    }
+
+    .cta-actions {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .cta .btn-secondary {
+      background: rgba(255,255,255,0.12);
+      border-color: rgba(255,255,255,0.18);
+      color: white;
+    }
+
+    footer {
+      padding: 26px 0 50px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .grid-4,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <span class="brand-badge">P1</span>
+        <span>PickleOne Platform</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="mailto:julu3128@gmail.com">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Independent testing for pickleball equipment</div>
+          <h1>Trusted performance insights for paddles, balls, and product quality.</h1>
+          <p>
+            PickleOne Platform is building an independent testing platform focused on durability, consistency,
+            and on-court performance. We help brands improve product quality and help players make more informed equipment decisions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:julu3128@gmail.com">Request Information</a>
+            <a class="btn btn-secondary" href="#services">Explore Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>Independent</strong>
+              <span>Objective evaluation framework</span>
+            </div>
+            <div class="stat">
+              <strong>Data-Driven</strong>
+              <span>Structured test methodology</span>
+            </div>
+            <div class="stat">
+              <strong>Brand-Focused</strong>
+              <span>Insights for product improvement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-card">
+          <img src="images/sports-tech-lab.jpg" alt="Modern sports technology laboratory" />
+          <div class="hero-image-caption">
+            <h3>Modern Sports Technology Laboratory</h3>
+            <p>
+              A premium visual that introduces the PickleOne testing environment with a clean, scientific, and trustworthy look.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>About PickleOne Platform</h2>
+            <p>
+              We are developing an independent platform to evaluate pickleball equipment through structured testing,
+              clear reporting, and practical performance analysis.
+            </p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">01</div>
+            <h3>Independent Evaluation</h3>
+            <p>
+              Our goal is to create a neutral framework for assessing product quality, durability, and consistency
+              across different equipment categories.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">02</div>
+            <h3>Actionable Insights</h3>
+            <p>
+              We aim to translate technical and on-court observations into clear findings that brands and players can understand and use.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">03</div>
+            <h3>Future Certification Vision</h3>
+            <p>
+              We are exploring a future-ready model for equipment benchmarking and quality signals that support long-term product trust.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Testing Environment</h2>
+            <p class="section-copy">
+              These images help illustrate the kind of product analysis, lab-style review, and premium equipment focus behind the PickleOne concept.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="image-card">
+            <img src="images/researchers-lab.jpg" alt="Two researchers in white lab coats observing lab equipment" />
+            <div class="image-card-content">
+              <h3>Research and Observation</h3>
+              <p>
+                Use a realistic image of two researchers in white lab coats observing a testing machine or product setup.
+              </p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img src="images/carbon-fiber-paddle.jpg" alt="Close-up of a carbon fiber pickleball paddle" />
+            <div class="image-card-content">
+              <h3>Carbon Fiber Paddle Detail</h3>
+              <p>
+                Add a clean close-up of a carbon fiber paddle face to emphasize materials, engineering, and product quality.
+              </p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img src="images/sports-tech-lab.jpg" alt="Clean sports technology laboratory interior" />
+            <div class="image-card-content">
+              <h3>Clean Testing Space</h3>
+              <p>
+                A modern lab image helps reinforce a professional and trustworthy visual identity for the website.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Core Focus Areas</h2>
+            <p class="section-copy">
+              PickleOne Platform is currently focused on building a professional foundation for independent equipment analysis.
+            </p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Paddle Evaluation</h3>
+            <p>
+              Review framework for durability, consistency, feel, control, power characteristics, and comparative performance across paddle models.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ball Performance Review</h3>
+            <p>
+              Structured observations for bounce consistency, wear patterns, durability, and practical play performance over time.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Brand Feedback Reports</h3>
+            <p>
+              Insight-oriented reporting designed to help manufacturers identify opportunities in product quality, performance tuning, and product positioning.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Methodology Development</h3>
+            <p>
+              Ongoing work to establish repeatable internal testing standards, reporting formats, and a scalable review infrastructure.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>How Our Process Is Being Built</h2>
+            <p class="section-copy">
+              We are designing a streamlined workflow that balances practical play experience, quality review, and structured reporting.
+            </p>
+          </div>
+        </div>
+        <div class="grid-4">
+          <article class="card process-step">
+            <div class="process-number">1</div>
+            <h3>Product Intake</h3>
+            <p>Equipment is categorized, documented, and prepared for a structured evaluation process.</p>
+          </article>
+          <article class="card process-step">
+            <div class="process-number">2</div>
+            <h3>Testing Framework</h3>
+            <p>Key criteria are reviewed through repeatable observations and internal benchmark categories.</p>
+          </article>
+          <article class="card process-step">
+            <div class="process-number">3</div>
+            <h3>Analysis & Reporting</h3>
+            <p>Findings are organized into clear summaries designed for comparison, product improvement, and communication.</p>
+          </article>
+          <article class="card process-step">
+            <div class="process-number">4</div>
+            <h3>Continuous Refinement</h3>
+            <p>Methodology and reporting models evolve as the platform expands and gathers more product data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card quote">
+          <p>
+            “Our vision is to help bring greater transparency, consistency, and confidence to pickleball equipment evaluation through independent analysis and clear reporting.”
+          </p>
+          <small>PickleOne Platform — Early-stage company overview</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta">
+          <h2 style="margin:0; color:white;">Interested in learning more?</h2>
+          <p>
+            We welcome inquiries from brands, partners, and early supporters interested in the future of independent pickleball equipment testing.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:julu3128@gmail.com">julu3128@gmail.com</a>
+            <a class="btn btn-secondary" href="#top">Back to Top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 PickleOne Platform. All rights reserved.</div>
+      <div>Independent pickleball equipment testing platform</div>
+    </div>
+  </footer>
+</body>
+</html>      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(247, 249, 252, 0.88);
+      border-bottom: 1px solid rgba(230, 235, 242, 0.9);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), #4f7cff);
+      color: white;
+      font-weight: 900;
+      box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 10px 24px rgba(31, 78, 216, 0.22);
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .hero {
+      padding: 76px 0 54px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: var(--primary);
+      border: 1px solid #d7e4ff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.5rem, 5vw, 4.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      max-width: 640px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      min-width: 170px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
     .card-label {
       color: var(--success);
       font-size: 0.85rem;
